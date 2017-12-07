@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+		#bloque1 {background: #f6f6f6;width: 100%;float: left;height: 70vh;}
+		.box-center {width: 100%;margin: 0 auto;}
+		.block-image img {width: 250px;margin: 45px auto;}
+		.block-image {position: absolute;    width: auto;    top: 15%;    left: 40%;}
+		#bloque2 {background: #60c79a;width: 100%;float: left;position: relative;height: 30vh;}
+		.box-left {width: 30%;height: 100%;float: left;}
+		.box-right {width: 70%;float: left;background: #223c4d;height: 35vh;padding: 6%;position: absolute;right: 0;bottom: 0;}
+		.title-and-social-red span, .title-and-social-red a{color: #60c79a;}
+		.title-and-social-red span {font-size: 18px;text-align: left;}
+		.title-and-social-red a {margin-left: 10px;font-size: 20px;}
+		.box-input {margin-top: 20px;}
+		.box-input input {width: 100%;background: transparent;border-top: 0;border-left: 0;border-right: 0;border-bottom: 1px solid #ccc;padding: 10px;color: #fff;margin-top: 8%;}
+		.box-input input.go-form {background: #60c79a;border: 1px solid #60c79a;text-align: center;color: #fff;border-radius: 5px;}
+		.box-input input::-webkit-input-placeholder {color: #ccc;}
+		.box-input input::-moz-placeholder {color: #ccc;}
+		.box-input input:-ms-input-placeholder {color: #ccc;}
+		.box-input input:-moz-placeholder {color: #ccc;}
+		.box-clave {margin: 20px auto;width: 70%;text-align: right;color: #60c79a;}
+		.box-clave a {color: #60c79a;margin: auto 20px;font-size: 14px;}
+		.block-logo-footer {width: 190px;margin: 55px auto;}
+		.block-logo-footer img {width: 100%;height: 100%;}
+		.box-right::after {content: "";background: url(img/pulpo2.png) no-repeat;width: 60px;height: 60px;display: block;position: absolute;left: -30px;top: 40%;border-radius: 100%;background-size: 100%;}
+		.box-right.top::after{top: 75%;}
+		#register {position: relative;}
+		.close-register-create {width: 100%;text-align: right;}
+		span.close-box {width: 42px;height: 42px;position: absolute;right: 0;top: -33%;cursor: pointer;}
+		span.close-box img {width: 100%;height: 100%;}
+		.create-account {width: 80%;margin: 0 auto;}
+		.create-account h3 {color: #60c79a;font-size: 35px;}
+		.content-play{    position: relative;    top: 110px;    font-size: 60px;}
+		.content-play img{   width: 50px;}
+		.content-play span{  color: #60c79a;font-size: 17px;text-align: center;display: inline-block;}
+	</style>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+	<section id="bloque1">
+		<div class="box-center">
+			<div class="block-image">
+				<a href="#"><img src="img/pulpoglobo.png"></a>
+				<a href="#" class="content-play"><img src="img/play.png"><span>play before <br>you register</span> </a>
+			</div>
+		</div>
+	</section>
+	<section id="bloque2">
+		<div class="box-left">
+			<div class="block-logo-footer">
+				<a href="#"><img src="img/logoharlow.png"></a>
+			</div>
+		</div>
+		<div class="box-right">
+			<div id="login">
+				<div class="title-and-social-red">
+					<span>LogIn with:</span><a href="#" class="fa fa-facebook-official" aria-hidden="true"></a><a href="#" class="fa fa-linkedin-square" aria-hidden="true"></a>
+				</div>
+				<div class="box-input">
+					<div class="row">
+						<div class="col-md-5 col-xs-12">
+							<input type="text" name="username" placeholder="Username"/>
+						</div>
+						<div class="col-md-5 col-xs-12">
+							<input type="pass" name="password" placeholder="Password"/>
+						</div>
+						<div class="col-md-2 col-xs-12">
+							<input type="submit" name="go" class="go-form" value="Go!" />
+						</div>
+						<div class="col-md-12">
+							<div class="box-clave">
+								<a href="#">Forgot your password?</a>|<a href="#" class="show-form-register">Create an account</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="register" style="display: none;">
+				<div class="close-register-create">
+					<span class="close-box">
+						<img src="img/cerrar.png">
+					</span>
+				</div>
+				<div class="create-account ">
+					<h3>Create an account</h3>
+					<div class="box-input">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="box-clave col-md-5">
+								<input type="submit" name="go" class="go-form" value="Login with facebook" />
+							</div>
+							<span style="color: #60c79a;font-size: 12px;text-align: center;    margin-top: 6%;" class="col-md-2">OR</span>
+							<div class="box-clave col-md-5">
+								<input type="submit" name="go" class="go-form" value="Login with linkedin" />
+							</div>
+						</div>
+						<div class="col-md-6 col-xs-12">
+							<input type="text" name="username" placeholder="Name *"/>
+						</div>
+						<div class="col-md-6 col-xs-12">
+							<input type="pass" name="password" placeholder="Lastname *"/>
+						</div>
+						<div class="col-md-6 col-xs-12">
+							<input type="text" name="username" placeholder="Birthday *"/>
+						</div>
+						<div class="col-md-6 col-xs-12">
+							<input type="pass" name="password" placeholder="E-mail *"/>
+						</div>
+												<div class="col-md-6 col-xs-12">
+							<input type="text" name="username" placeholder="Password *"/>
+						</div>
+						<div class="col-md-6 col-xs-12">
+							<input type="pass" name="password" placeholder="Confirm Password *"/>
+						</div>
+						<div class="col-md-2 col-xs-12" style="float: right;margin-top: 30px;">
+							<input type="submit" name="go" class="go-form" value="Submit" />
+						</div>
+					</div></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script>
+		jQuery(document).ready(function(){
+			jQuery(".close-box").click(function(){
+				jQuery("#register").hide("slow");
+				jQuery("#login").show("slow");
+			});
+		    jQuery(".show-form-register").click(function(){
+		    	jQuery("#login").hide("slow");
+		        jQuery("#register").show("slow");
+		    });
+		});
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+jQuery(document).ready(function() {
+	jQuery(".show-form-register").click(function(){
+			jQuery(".box-right").animate({height: "70vh"},1000);
+			jQuery(".block-image").animate({left: "5%"},1000);
+			jQuery('.box-right').addClass("top");
+	});
+jQuery(".close-box").click(function(){
+			jQuery(".box-right").animate({height: "35vh"},1000);
+			jQuery(".block-image").animate({left: "40%"},1000);
+			jQuery('.box-right').removeClass("top");
+
+	});	
+
+});
+</script>
+</body>
+</html>
